@@ -1,5 +1,5 @@
 function main() {
-    console.log("a")
+    document.write("<h1>hahahahha</h1>")
 }
 function about() {
     console.log("a")
