@@ -1,0 +1,16 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    background-image: url("assets/rustwallpaper.png")
+  }
+  
+  .blur {
+    backdrop-filter: blur(5px);
+  }
+  
+  .startbutton {
+    background-color: black;
+    color: white;
+  }
