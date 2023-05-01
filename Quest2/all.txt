@@ -1,0 +1,875 @@
+// Index HTML
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Meta Quest 2 - x04000</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <video autoplay muted loop id="myVideo">
+            <source src="assets/quest2.mp4" type="video/mp4">
+        </video>
+        
+        <div class="content">
+            <h1>Meta Quest 2</h1>
+            <div id="container">
+                <button class="learn-more">
+                  <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                  </span>
+                  <span class="button-text"><a href="https://x04000.github.com/Quest2/founders.html" style="text-decoration:none; color:#000;">Learn More</a></span>
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
+
+// Style CSS
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.blur {
+    backdrop-filter: blur(5px);
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+
+/* Learn More */
+
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mukta", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background: #f3f8fa;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
+}
+
+@supports (display: grid) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.625rem;
+    grid-template-areas: ". main main ." ". main main .";
+  }
+
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+// Software Style CSS
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.blur {
+    backdrop-filter: blur(5px);
+}
+
+#myVideo {
+    position: fixed;
+    right: -20;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: scale(0.97);
+  }
+  
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+
+/* Learn More */
+
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mukta", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background: #f3f8fa;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
+}
+
+@supports (display: grid) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.625rem;
+    grid-template-areas: ". main main ." ". main main .";
+  }
+
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+// Alternatives Style CSS
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.blur {
+    backdrop-filter: blur(5px);
+}
+
+#myVideo {
+    position: fixed;
+    right: -350;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: scale(0.97);
+  }
+  
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+
+/* Learn More */
+
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mukta", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background: #f3f8fa;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
+}
+
+@supports (display: grid) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.625rem;
+    grid-template-areas: ". main main ." ". main main .";
+  }
+
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+}
+
+// End Style CSS
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    background-image: url("assets/quest2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .blur {
+    backdrop-filter: blur(5px);
+  }
+  
+  .startbutton {
+    background-color: black;
+    color: white;
+  }
+
+// Menu CSS
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px auto;
+    width: 200px;
+    height: 50px;
+    background: white;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    transition: 1s box-shadow;
+    float: left;
+  }
+  
+  .menu:hover {
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+  }
+  
+  .menu:hover::before, .menu:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background: #FDA8CF;
+    border-radius: 5px;
+    z-index: -1;
+    animation: 1s clockwise infinite;
+  }
+  
+  .menu:hover:after {
+    background: #F3CE5E;
+    animation: 2s counterclockwise infinite;
+  }
+  
+  @keyframes clockwise {
+    0% {
+      top: -5px;
+      left: 0;
+    }
+    12% {
+      top: -2px;
+      left: 2px;
+    }
+    25% {
+      top: 0;
+      left: 5px;    
+    }
+    37% {
+      top: 2px;
+      left: 2px;
+    }
+    50% {
+      top: 5px;
+      left: 0;    
+    }
+    62% {
+      top: 2px;
+      left: -2px;
+    }
+    75% {
+      top: 0;
+      left: -5px;
+    }
+    87% {
+      top: -2px;
+      left: -2px;
+    }
+    100% {
+      top: -5px;
+      left: 0;    
+    }
+  }
+  
+  @keyframes counterclockwise {
+    0% {
+      top: -5px;
+      right: 0;
+    }
+    12% {
+      top: -2px;
+      right: 2px;
+    }
+    25% {
+      top: 0;
+      right: 5px;    
+    }
+    37% {
+      top: 2px;
+      right: 2px;
+    }
+    50% {
+      top: 5px;
+      right: 0;    
+    }
+    62% {
+      top: 2px;
+      right: -2px;
+    }
+    75% {
+      top: 0;
+      right: -5px;
+    }
+    87% {
+      top: -2px;
+      right: -2px;
+    }
+    100% {
+      top: -5px;
+      right: 0;    
+    }
+  }
+
+// Founders HTML
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Meta Quest 2 - x04000</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <script src="script.js"></script>
+        <video autoplay muted loop id="myVideo">
+            <source src="assets/MetaLogo.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <div class="blur" align="center" style="border: ridge #000000 5px;">
+                <h1 style="color:#0892d0">Meta Quest 2 Founders</h1>
+                <h2>The company behind of this headset is Oculus, propriety of Meta.</h2>
+                <p></p>
+                <h2>Oculus has founded by Palmer Luckey, Brendan Iribe, Michael Antonov, Jack McCauley and Nate Mitchell and they launched their first product in 2012, the Oculus Rift.</h2>
+                <p></p>
+                <h2>They raised around 2.4 million dollars and in 2014, Mark Zuckerberg bought the company for 2.3 thousand million dollars.</h2>
+            </div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/founders.html" style="text-decoration:none; color:#fff;">Founders</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/comfort.html" style="text-decoration:none; color:#fff;">Comfort</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/functionability.html" style="text-decoration:none; color:#fff;">Functionability</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/hardware.html" style="text-decoration:none; color:#fff;">Hardware</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/software.html" style="text-decoration:none; color:#fff;">Software</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/alternatives.html" style="text-decoration:none; color:#fff;">Alternatives</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/review.html" style="text-decoration:none; color:#fff;">Review</a></div>
+        </div>
+    </body>
+</html>
+
+// Comfort HTML
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Meta Quest 2 - x04000</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <script src="script.js"></script>
+        <video autoplay muted loop id="myVideo">
+            <source src="assets/Quest2Guard.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <div class="blur" align="center" style="border: ridge #000000 5px;">
+                <h1 style="color:#0892d0">Meta Quest 2 Comfort</h1>
+                <h2>The comfort of the headset Meta Quest 2 is good, but it is not the best.</h2>
+                <p></p>
+                <h2>By default, this product comes with an elastic band and it is comfortable, but you can upgrade this with the Elite Strap. It is shaped like a pincer and supports better your head.</h2>
+                <p></p>
+                <h2>The sponge is very good, but you can change it if you prefer other.</h2>
+            </div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/founders.html" style="text-decoration:none; color:#fff;">Founders</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/comfort.html" style="text-decoration:none; color:#fff;">Comfort</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/functionability.html" style="text-decoration:none; color:#fff;">Functionability</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/hardware.html" style="text-decoration:none; color:#fff;">Hardware</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/software.html" style="text-decoration:none; color:#fff;">Software</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/alternatives.html" style="text-decoration:none; color:#fff;">Alternatives</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/review.html" style="text-decoration:none; color:#fff;">Review</a></div>
+        </div>
+    </body>
+</html>
+
+// Functionability HTML
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Meta Quest 2 - x04000</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <script src="script.js"></script>
+        <video autoplay muted loop id="myVideo">
+            <source src="assets/Quest2_2.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <div class="blur" align="center" style="border: ridge #000000 5px;">
+                <h1 style="color:#0892d0">Meta Quest 2 Functionability</h1>
+                <h2>This is headset All-In-One, so you don't need a PC or sensors to use it. You can connect it to a PC or connect sensor around your room but you don't need it.</h2>
+                <p></p>
+                <h2>The Meta Quest 2 have 4 cameras of infrared rays to track your move, the environment, the controllers and, if you want, your hands. They have an internal chipset and a battery to works.</h2>
+            </div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/founders.html" style="text-decoration:none; color:#fff;">Founders</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/comfort.html" style="text-decoration:none; color:#fff;">Comfort</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/functionability.html" style="text-decoration:none; color:#fff;">Functionability</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/hardware.html" style="text-decoration:none; color:#fff;">Hardware</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/software.html" style="text-decoration:none; color:#fff;">Software</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/alternatives.html" style="text-decoration:none; color:#fff;">Alternatives</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/review.html" style="text-decoration:none; color:#fff;">Review</a></div>
+        </div>
+    </body>
+</html>
+
+// Hardware HTML
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Meta Quest 2 - x04000</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <script src="script.js"></script>
+        <video autoplay muted loop id="myVideo">
+            <source src="assets/quest2hardware.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <div class="blur" align="center" style="border: ridge #000000 5px;">
+                <h1 style="color:#0892d0">Meta Quest 2 Hardware</h1>
+                <h2>This product have the chipset Qualcomm Snapdragon XR2 and 6GB of RAM to run properly the VR games and supports connections of Wi-Fi 6 and Bluethooth 5.0. This headset have from 64GB to 256GB of storage (ROM). To supply energy, the Meta Quest 2 have a battery of 3648 mHa.</h2>
+                <p></p>
+                <h2>It have 2 LCD Screens of 1832x1920 resolution per eye with 72hz, but you can configurate 90hz, and 120hz with an experimental function. You see this screens through a 2 fresnel lens. This have 101 of FOV and 3 modes of IPD configuration. This headset have 4 infrared cameras, 2 stereo speakers (on the sides) and 4 microphones. It have a C-Port and a Jack input. The weight is 503g.</h2>
+            </div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/founders.html" style="text-decoration:none; color:#fff;">Founders</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/comfort.html" style="text-decoration:none; color:#fff;">Comfort</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/functionability.html" style="text-decoration:none; color:#fff;">Functionability</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/hardware.html" style="text-decoration:none; color:#fff;">Hardware</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/software.html" style="text-decoration:none; color:#fff;">Software</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/alternatives.html" style="text-decoration:none; color:#fff;">Alternatives</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/review.html" style="text-decoration:none; color:#fff;">Review</a></div>
+        </div>
+    </body>
+</html>
+
+// Software HTML
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Meta Quest 2 - x04000</title>
+        <link href="softwarestyle.css" rel="stylesheet" type="text/css"/>
+        <link href="menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <script src="script.js"></script>
+        <video autoplay muted loop id="myVideo">
+            <source src="assets/oculuslogo.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <div class="blur" align="center" style="border: ridge #000000 5px;">
+                <h1 style="color:#0892d0">Meta Quest 2 Software</h1>
+                <h2>The software of this vr headset is Android 12L with a custom firmware called OculusOS. It runs on top of the Android Kernel. You can navigate the interface and the Apps with a custom 3D layer called Oculus Home. The software, with the headset sensors, can track you with the 6DoF system.</h2>
+            </div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/founders.html" style="text-decoration:none; color:#fff;">Founders</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/comfort.html" style="text-decoration:none; color:#fff;">Comfort</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/functionability.html" style="text-decoration:none; color:#fff;">Functionability</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/hardware.html" style="text-decoration:none; color:#fff;">Hardware</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/software.html" style="text-decoration:none; color:#fff;">Software</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/alternatives.html" style="text-decoration:none; color:#fff;">Alternatives</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/review.html" style="text-decoration:none; color:#fff;">Review</a></div>
+        </div>
+    </body>
+</html>
+
+// Alternatives HTML
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Meta Quest 2 - x04000</title>
+        <link href="alternativesstyle.css" rel="stylesheet" type="text/css"/>
+        <link href="menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <script src="script.js"></script>
+        <video autoplay muted loop id="myVideo">
+            <source src="assets/valveindex.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <div class="blur" align="center" style="border: ridge #000000 5px;">
+                <h1 style="color:#0892d0">Alternatives to Meta Quest 2</h1>
+                <h2>There are a lot of alternative headsets, for example, Pico 4 is another standalone headset created by PicoXR. Valve Index is other example, but it is a non-standalone. The Valve Index, HTC Vive, Lenovo Explorer and other similar headsets need a PC to works and sometimes, they neeed external sensors.</h2>
+            </div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/founders.html" style="text-decoration:none; color:#fff;">Founders</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/comfort.html" style="text-decoration:none; color:#fff;">Comfort</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/functionability.html" style="text-decoration:none; color:#fff;">Functionability</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/hardware.html" style="text-decoration:none; color:#fff;">Hardware</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/software.html" style="text-decoration:none; color:#fff;">Software</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/alternatives.html" style="text-decoration:none; color:#fff;">Alternatives</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/review.html" style="text-decoration:none; color:#fff;">Review</a></div>
+        </div>
+    </body>
+</html>
+
+// Review HTML
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Meta Quest 2 - x04000</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <script src="script.js"></script>
+        <video autoplay muted loop id="myVideo">
+            <source src="assets/populationone.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <div class="blur" align="center" style="border: ridge #000000 5px;">
+                <h1 style="color:#0892d0">Meta Quest 2 Review</h1>
+                <h2>In general, this headset is one of the best. It's not very expensive and it have a very good quality. Don't need wires, sensors or a PC to works.</h2>
+                <p></p>
+                <h2>You have better headsets, for example Pico 4, but the software of the Meta Quest 2 is still winning and it have the companys Oculus and Meta behind of this product. This headsets is a very good option for 450€.</h2>
+            </div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/founders.html" style="text-decoration:none; color:#fff;">Founders</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/comfort.html" style="text-decoration:none; color:#fff;">Comfort</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/functionability.html" style="text-decoration:none; color:#fff;">Functionability</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/hardware.html" style="text-decoration:none; color:#fff;">Hardware</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/software.html" style="text-decoration:none; color:#fff;">Software</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/alternatives.html" style="text-decoration:none; color:#fff;">Alternatives</a></div>
+            <div style="background-color: black; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/review.html" style="text-decoration:none; color:#fff;">Review</a></div>
+            <div style="background-color: #0892d0; margin-right: 20px;" class="menu"><a href="https://x04000.github.com/Quest2/end.html" style="text-decoration:none; color:#fff;">End</a></div>
+        </div>
+    </body>
+</html>
+
+// End HTML
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Meta Quest 2 - x04000</title>
+        <link href="endstyle.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+          <p></p>
+          <div id="main" align="center" class="blur" style="border: ridge #000000 5px;">
+            <h1 style="color:RED">Meta Quest 2 Review WebSite</h1>
+            <h1 style="color: DARKBLUE">by x04000</h1>
+            <p></p>
+            <h2 style="color:blueviolet">By Adrián Sánchez & David Gala</h2>
+            <p></p>
+            <h2 style="color:#0892d0">Thanks you for watch this and not falling asleep :D</h2>
+            <p></p>
+            <h2 style="color:#0892d0">I spent more than 7 hours doing this website and the base of this. This project have more than 875 lines of code and 30135 chars xd</h2>
+            <img src="assets/discord.png">
+            <p></p>
+            <h1 style="color:BLACK">This web is made by Blood Engine v2</h1>
+            <img src="assets/bloodengine.gif" width="650">
+            <p></p>
+            <h2 style="color:BLACK">See my other projects at <a href="https://github.com/x04000">github.com/x04000</a></h2>
+          </div>
+    </body>
+</html>
