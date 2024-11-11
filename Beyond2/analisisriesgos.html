@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond - Analisis de riesgos y recomendaciones</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"> <!-- Fuente de Google Fonts -->
+</head>
+<body>
+    <header>
+        <h1>[ Beyond ] | Análisis de riesgos de una empresa</h1>
+        <nav>
+            <ul>
+                <li><a href="#activos">Activos</a></li>
+                <li><a href="#amenazas">Amenazas</a></li>
+                <li><a href="#impacto">Impacto</a></li>
+                <li><a href="#riesgos">Riesgos</a></li>
+                <li><a href="#tratamiento">Tratamiento</a></li>
+                <li><a href="#salvaguardas">Salvaguardas</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="activos">
+            <h2>Listado y clasificación de los activos de la empresa</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Responsable</th>
+                        <th>Tipo</th>
+                        <th>Ubicación</th>
+                        <th>Crítico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ID_01</td>
+                        <td>INS_01</td>
+                        <td>Protección incendios y alarma de intrusos</td>
+                        <td>Jefe de seguridad</td>
+                        <td>Físico</td>
+                        <td>Instalaciones</td>
+                        <td>Sí</td>
+                    </tr>
+                    <tr>
+                        <td>ID_02</td>
+                        <td>OFICINA_01</td>
+                        <td>PC 1</td>
+                        <td>Departamento oficina</td>
+                        <td>Físico</td>
+                        <td>Oficina</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>ID_03</td>
+                        <td>OFICINA_02</td>
+                        <td>PC 2</td>
+                        <td>Departamento oficina</td>
+                        <td>Físico</td>
+                        <td>Oficina</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>ID_04</td>
+                        <td>OFICINA_03</td>
+                        <td>PC 3</td>
+                        <td>Departamento oficina</td>
+                        <td>Físico</td>
+                        <td>Oficina</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>ID_05</td>
+                        <td>OFICINA_04</td>
+                        <td>PC 4</td>
+                        <td>Departamento oficina</td>
+                        <td>Físico</td>
+                        <td>Oficina</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>ID_06</td>
+                        <td>Servidor de la empresa</td>
+                        <td>Servidor 01</td>
+                        <td>Departamento Dirección</td>
+                        <td>Físico</td>
+                        <td>Dirección</td>
+                        <td>Sí</td>
+                    </tr>
+                    <tr>
+                        <td>ID_07</td>
+                        <td>Impresora_01</td>
+                        <td>Impresora</td>
+                        <td>Depart. oficina</td>
+                        <td>Físico</td>
+                        <td>Oficina</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>ID_08</td>
+                        <td>DIRECCION_02</td>
+                        <td>Copia seguridad de los datos</td>
+                        <td>Departamento Dirección</td>
+                        <td>Físico</td>
+                        <td>Dirección</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>ID_09</td>
+                        <td>SALA REUNIONES_01</td>
+                        <td>Portátil</td>
+                        <td>Departamento sala de reuniones</td>
+                        <td>Físico</td>
+                        <td>Sala de reuniones</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>ID_10</td>
+                        <td>Antivirus_01</td>
+                        <td>Antivirus</td>
+                        <td>Empresa externa</td>
+                        <td>Lógico</td>
+                        <td>Software</td>
+                        <td>Sí</td>
+                    </tr>
+                </tbody>
+            </table>            
+        </section>
+        <section id="amenazas">
+            <h2>Listado y clasificación de las amenazas que puede sufrir la empresa</h2>
+            <p>Amenazas de la empresa</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Amenazas</th>
+                        <th>Vulnerabilidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fallo de sistema en detección de incendios.</td>
+                        <td>Ins_01</td>
+                    </tr>
+                    <tr>
+                        <td>Pérdida de datos críticos si no hay copias de seguridad adecuadas.</td>
+                        <td>Servidor 1</td>
+                    </tr>
+                    <tr>
+                        <td>Robo o fuga de información impresa.</td>
+                        <td>Impresora-01</td>
+                    </tr>
+                    <tr>
+                        <td>Falta de copias actualizadas en caso de un fallo del sistema principal.</td>
+                        <td>Copia seguridad de los datos (Dirección)</td>
+                    </tr>
+                    <tr>
+                        <td>Software desactualizado que no detecte nuevas amenazas.</td>
+                        <td>Antivirus_01</td>
+                    </tr>
+                    <tr>
+                        <td>1. Malware o virus que comprometan la información almacenada. <br>
+                            2. Fallos de hardware o software que afecten la productividad. <br>
+                            3. Pérdida o robo de equipos con información sensible.
+                        </td>
+                        <td>Pc_1,2,3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Empleado →  El Phishing es una amenaza de ingeniería social pero a los/as empleados/as.</p>        
+        </section>
+        <section id="impacto">
+            <h2>Estimación justificada del impacto y la probabilidad de cada amenaza</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Activo</th>
+                        <th>Cualitativo</th>
+                        <th>Cualitativo</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ins_01</td>
+                        <td>Media</td>
+                        <td>2</td>
+                        <td>Fallo de sistema en detección de incendio</td>
+                    </tr>
+                    <tr>
+                        <td>Servidor 1</td>
+                        <td>Alta</td>
+                        <td>3</td>
+                        <td>Pérdida de datos críticos si no hay copias de seguridad adecuadas</td>
+                    </tr>
+                    <tr>
+                        <td>Impresora-01</td>
+                        <td>Media</td>
+                        <td>2</td>
+                        <td>Robo o fuga de información impresora</td>
+                    </tr>
+                    <tr>
+                        <td>Copia seguridad de los datos (Dirección)</td>
+                        <td>Alta</td>
+                        <td>3</td>
+                        <td>Falta de copia actualizadas en caso de un fallo del sistema central</td>
+                    </tr>
+                    <tr>
+                        <td>Empleados</td>
+                        <td>Media</td>
+                        <td>2</td>
+                        <td>El phishing en una amenaza de ingeniería social hacia los empleados</td>
+                    </tr>
+                    <tr>
+                        <td>Pc_2</td>
+                        <td>Media</td>
+                        <td>2</td>
+                        <td>Malware o virus que comprometa la información almacenada</td>
+                    </tr>
+                    <tr>
+                        <td>Pc_3</td>
+                        <td>Media</td>
+                        <td>2</td>
+                        <td>Pérdida o robo de equipo con información sensible</td>
+                    </tr>
+                    <tr>
+                        <td>Pc_4</td>
+                        <td>Media</td>
+                        <td>2</td>
+                        <td>Fallo de hardware o software que afecte la productividad</td>
+                    </tr>
+                </tbody>
+            </table>            
+        </section>
+        <section id="riesgos">
+            <h2>Cálculo de los riesgos y presentación visual de los mismos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Activo</th>
+                        <th>Amenaza</th>
+                        <th>Probabilidad</th>
+                        <th>Impacto</th>
+                        <th>Cálculo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ins_01</td>
+                        <td>Fallo de sistema en detección de incendio</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Servidor_1</td>
+                        <td>Pérdida de datos críticos si no hay copias de seguridad adecuadas</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Impresora</td>
+                        <td>Robo o fuga de información impresora</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Copia seguridad de los datos (dirección)</td>
+                        <td>Falta de copia actualizadas en caso de un fallo del sistema central</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Empleados</td>
+                        <td>El phishing en una amenaza de ingeniería social hacia los empleados</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Pc_1,2,3</td>
+                        <td>Malware o virus que comprometa la información almacenada</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table> <br>
+            <img src="assets/analisisriesgos.png">      
+        </section>
+        <section id="tratamiento">
+            <h2>Establecer el correcto tratamiento del riesgo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Activo</th>
+                        <th>Nivel de riesgo</th>
+                        <th>Tratamiento de riesgo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Servidor_1</td>
+                        <td>Muy alta</td>
+                        <td>Implementar copias de seguridad regulares y soluciones de recuperación.</td>
+                    </tr>
+                    <tr>
+                        <td>Copia seguridad de los datos (dirección)</td>
+                        <td>Alta</td>
+                        <td>Asegurar que las copias de seguridad sean automáticas y se actualicen frecuentemente.</td>
+                    </tr>
+                    <tr>
+                        <td>Empleados</td>
+                        <td>Alta</td>
+                        <td>Capacitar a los empleados sobre la detección y prevención del phishing.</td>
+                    </tr>
+                    <tr>
+                        <td>Pc_1,2,3</td>
+                        <td>Medio</td>
+                        <td>Instalar software de protección contra el malware y realizar copias de seguridad regulares.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="salvaguardas">
+            <h2>Propuesta de al menos 2 salvaguardas por cada amenaza</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Activo</th>
+                        <th>Amenaza</th>
+                        <th>Salvaguarda</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ins_01</td>
+                        <td>Fallo de sistema en detección de incendio</td>
+                        <td>
+                            Instalación de un sistema redundante de detección de incendios.<br>
+                            Mantenimiento y pruebas del sistema actual.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Servidor_1</td>
+                        <td>Pérdida de datos críticos si no hay copias de seguridad adecuadas</td>
+                        <td>
+                            Implementar copias de seguridad automáticas y frecuentes.<br>
+                            Almacenar copias de seguridad en ubicaciones geográficamente separadas.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Impresora</td>
+                        <td>Robo o fuga de información impresora</td>
+                        <td>
+                            Implementar un acceso físico a la impresora.<br>
+                            Utilizar funciones de impresora segura, como la impresión con pin.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Copia seguridad de los datos (dirección)</td>
+                        <td>Falta de copia actualizadas en caso de un fallo del sistema central</td>
+                        <td>
+                            Configurar copias de seguridad automatizadas y verificaciones periódicas.<br>
+                            Realizar simulacros de recuperación de datos para asegurar la validez de las copias de seguridad.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Empleados</td>
+                        <td>El phishing en una amenaza de ingeniería social hacia los empleados</td>
+                        <td>
+                            Realizar formaciones sobre seguridad y concienciación sobre el phishing.<br>
+                            Implementar filtros avanzados de correos electrónicos y sistemas de validación multifactor.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pc_1</td>
+                        <td>Malware o virus que comprometa la información almacenada</td>
+                        <td>
+                            Instalar y actualizar regularmente software antivirus.<br>
+                            Restringir los permisos de instalación de software a usuarios no autorizados.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pc_2</td>
+                        <td>Pérdida o robo de equipo con información sensible</td>
+                        <td>
+                            Implementar cifrado de discos y datos sensibles.<br>
+                            Utilizar software de rastreo y bloqueo remoto desde dispositivos.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pc_3</td>
+                        <td>Fallo de hardware o software que afecte la productividad</td>
+                        <td>
+                            Programar mantenimiento regular de software y hardware.<br>
+                            Utilizar sistemas de redundancia y seguridad.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Cybersecurity recommendations</h2>
+            <p>[CAMBIAR]</p>
+            <ol>
+                <li>Use strong and secure passwords.</li>
+                <li>Don’t use the same password on all sites.</li>
+                <li>Don’t download and execute untrusted files.</li>
+                <li>Enable the 2FA (Two Factor Auth).</li>
+                <li>Always update your software and OS.</li>
+                <li>Don’t trust in third party or suspicious links.</li>
+                <li>Do security copies of your files.</li>
+                <li>Don’t connect to free & public WiFi.</li>
+                <li>Use trustable antivirus on your devices.</li>
+                <li>Don’t share confidential information.</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Beyond. All rights reserved.</p>
+    </footer>
+</body>
+</html>
