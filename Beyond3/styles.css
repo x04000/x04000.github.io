@@ -60,7 +60,7 @@ nav ul li a:hover {
     box-shadow: 0 0 15px 5px rgba(0, 255, 255, 1), 0 0 25px 5px rgba(255, 0, 255, 1), 0 0 35px 5px rgb(96, 0, 160);
 }
 
-nav ul li a#especial {
+nav ul#navbar2 li a {
     position: relative;
     border: 2px solid transparent;
     animation: borderAnimation 2s infinite;
@@ -81,18 +81,22 @@ nav ul li a#especial {
     }
 }
 
-nav ul li a#especial:hover {
+nav ul#navbar2 li a:hover {
     animation: hoverAnimation 1s ease-in-out infinite alternate;
 }
 
 @keyframes hoverAnimation {
     0% {
         transform: scale(1);
-        box-shadow: 0 0 10px red;
+        border-color: red;
+        box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 25px 5px rgb(54, 0, 0), 0 0 35px 5px rgb(160, 0, 0);
+    }
+    50% {
+        box-shadow: 0 0 5px transparent;
+        box-shadow: 0 0 10px transparent;
     }
     100% {
         transform: scale(1.1);
-        box-shadow: 0 0 20px red;
     }
 }
 
@@ -191,7 +195,7 @@ footer {
 #colortxtTitle {
     font-weight: bold;
     background: linear-gradient(270deg, #ff0000, #48009b);
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     background-size: 400% 400%;
     animation: gradientTextAnimation 10s ease infinite;
@@ -201,7 +205,7 @@ footer {
     font-size: 20px;
     font-weight: bold;
     background: linear-gradient(270deg, #008cff, #48009b);
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     background-size: 400% 400%;
     animation: gradientTextAnimation 10s ease infinite;
@@ -211,17 +215,43 @@ footer {
     font-size: 20px;
     font-weight: bold;
     background: linear-gradient(270deg, #ff0000, #48009b);
-    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     background-size: 400% 400%;
     animation: gradientTextAnimation 10s ease infinite;
 }
+
 
 @keyframes gradientTextAnimation {
     0% {
         background-position: 0% 50%;
     }
     50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#colortxt3 {
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #008cff, #48009b, #ff0000);
+    background-clip: text;
+    color: transparent;
+    background-size: 400% 400%;
+    animation: gradientTextAnimation2 9s ease infinite;
+}
+
+@keyframes gradientTextAnimation2 {
+    0% {
+        background-position: 0% 50%;
+    }
+    30% {
+        background-position: 50% 50%;
+    }
+    60% {
         background-position: 100% 50%;
     }
     100% {

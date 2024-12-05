@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
+    <script src="index.js"></script>
     <video autoplay muted loop id="bg-video">
-        <source src="https://static.moewalls.com/videos/preview/2023/deep-space-galactic-preview.mp4" type="video/mp4">
+        <source id="bg-video-src" src="https://static.moewalls.com/videos/preview/2023/deep-space-galactic-preview.mp4" type="video/mp4">
     </video>
     <div class="content">
         <header>
@@ -37,10 +38,12 @@
             </section>
         </main>
         <footer>
-            <p id="colortxt">&copy; 2024 Beyond. All rights reserved.</p>
-            <button class="button-85" role="button">Estilo 1</button>
-            <button class="button-85" role="button">Estilo 2</button>
-            <button class="button-85" role="button">Estilo 3</button>
+            <p id="colortxt3">&copy; 2024 Beyond. All rights reserved.</p>
+            <button class="button-85" role="button" onclick="changeStyle(1)">Estilo 1</button>
+            <button class="button-85" role="button" onclick="changeStyle(2)">Estilo 2</button>
+            <button class="button-85" role="button" onclick="changeStyle(3)">Estilo 3</button>
+            <button class="button-85" role="button" onclick="changeStyle(4)">Estilo 4</button>
+            <button class="button-85" role="button" onclick="changeStyle(5)">Estilo 5</button>
         </footer>
     </div>
 </body>
