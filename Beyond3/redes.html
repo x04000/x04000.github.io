@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[ Beyond ]</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" id="css-ref" href="styles4.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
+    <script src="index.js"></script>
     <video autoplay muted loop id="bg-video">
-        <source src="https://static.moewalls.com/videos/preview/2023/deep-space-galactic-preview.mp4" type="video/mp4">
+        <source id="bg-video-src" src="https://static.moewalls.com/videos/preview/2024/moonlight-night-sakura-river-preview.mp4" type="video/mp4">
     </video>
     <div class="content">
         <header>
@@ -20,6 +21,7 @@
                     <li><a href="auditoria.html">SEG</a></li>
                     <li><a href="redes.html">SER</a></li>
                     <li><a href="ubuntuserver.html">SOR</a></li>
+                    <li><a href="web.html">WEB</a></li>
                 </ul>
             </nav>
         </header>
@@ -40,7 +42,12 @@
             </section>
         </main>
         <footer>
-            <p id="colortxt">&copy; 2024 Beyond. All rights reserved.</p>
+            <p id="colortxt3">&copy; 2024 Beyond. All rights reserved.</p>
+            <button class="button-85" role="button" onclick="changeStyle(1)">Estilo 1</button>
+            <button class="button-85" role="button" onclick="changeStyle(2)">Estilo 2</button>
+            <button class="button-85" role="button" onclick="changeStyle(3)">Estilo 3</button>
+            <button class="button-85" role="button" onclick="changeStyle(4)">Estilo 4</button>
+            <button class="button-85" role="button" onclick="changeStyle(5)">Estilo 5</button>
         </footer>
     </div>
 </body>

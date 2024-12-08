@@ -11,4 +11,5 @@ function changeStyle(t) {
     if (!styleTable[t]) { t = 1; }
     document.getElementById("bg-video-src").src = styleTable[t];
     document.getElementById("bg-video").load();
+    document.getElementById("css-ref").href = "styles"+t+".css";
 }
