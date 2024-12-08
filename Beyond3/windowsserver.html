@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[ Beyond ]</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="https://static.moewalls.com/videos/preview/2023/deep-space-galactic-preview.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <header>
+            <h1 id="colortxtTitle">→ [ Beyond ] ←</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="auditoria.html">SEG</a></li>
+                    <li><a href="raid5.html">SOR</a></li>
+                </ul>
+                <ul id="navbar2">
+                    <li><a href="ubuntuserver.html">Ubuntu Server</a></li>
+                    <li><a href="windowsserver.html">Windows Server</a></li>
+                    <li><a href="raid5.html">RAID 5</a></li>
+                    <li><a href="copiasseguridad.html">Copias de seguridad</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2 id="colorbar">Instalar Windows Server 2019</h2>
+                <p>Instalamos en una máquina virtual <span id="colortxt">Windows Server</span> <span id="colortxt2">2019</span></p>
+                <div class="image-container2">
+                    <p>Creamos nuestra VM en nuestro VirtualBox.</p>
+                    <img src="assets/windowsserver-1.png" height="250"> <br> <br>
+                    <p>Le damos a Instalar ahora.</p>
+                    <img src="assets/windowsserver-2.png" height="500"> <br> <br>
+                    <p>Seleccionamos la versión que queramos (en este caso Standard con escritorio).</p>
+                    <img src="assets/windowsserver-3.png" height="500"> <br> <br>
+                    <p>Configuramos el usuario administrador.</p>
+                    <img src="assets/windowsserver-4.png" height="450"> <br> <br>
+                    <p>Verificamos la instalación al terminar.</p>
+                    <img src="assets/windowsserver-5.png" height="500"> <br> <br>
+                </div>
+                <h2 id="colorbar">Configurar DHCP</h2>
+                <p>Instalamos el servicio <span id="colortxt2">DHCP</span> y lo hacemos funcionar.</p>
+                <div class="image-container2">
+                    <p>Configuramos el adaptador de red del servidor.</p>
+                    <img src="assets/dhcp-windows-1.png" height="500"> <br> <br>
+                    <p>Verificamos y ponemos IP estática al adaptador de red.</p>
+                    <img src="assets/dhcp-windows-2.png" height="350"> <br> <br>
+                    <p>Instalamos el servicio <span id="colortxt">DHCP</span>.</p>
+                    <img src="assets/dhcp-windows-3.png" height="400"> <br> <br>
+                    <p>Cuando finalice tendremos que configurarlo.</p>
+                    <img src="assets/dhcp-windows-4.png" height="350"> <br> <br>
+                    <p>Nos dirigiremos al administrador del servidor y el apartado de <span id="colortxt">DHCP</span>.</p>
+                    <img src="assets/dhcp-windows-5.png" height="350"> <br> <br>
+                    <p>Crearemos un nuevo ámbito.</p>
+                    <img src="assets/dhcp-windows-6.png" height="400"> <br> <br>
+                    <p>Le asignamos un nombre y el rango de IPs.</p>
+                    <img src="assets/dhcp-windows-7.png" height="700"> <br> <br>
+                    <p>Ahora configuraremos la puerta de enlace y el servidor DNS.</p>
+                    <img src="assets/dhcp-windows-8.png" height="700"> <br> <br>
+                    <p>Podemos comprobar que nos ha asignado correctamente la IP en nuestro cliente de Windows.</p>
+                    <img src="assets/dhcp-windows-9.png" height="400"> <br> <br>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p id="colortxt">&copy; 2024 Beyond. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

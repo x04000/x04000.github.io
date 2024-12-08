@@ -68,6 +68,46 @@ nav ul#navbar2 li a {
 
 @keyframes borderAnimation {
     0% {
+        border-color: rgb(74, 0, 172);
+        box-shadow: 0 0 5px rgb(74, 0, 172);
+    }
+    50% {
+        border-color: transparent;
+        box-shadow: 0 0 5px transparent;
+    }
+    100% {
+        border-color: rgb(74, 0, 172);
+        box-shadow: 0 0 5px rgb(74, 0, 172);
+    }
+}
+
+nav ul#navbar2 li a:hover {
+    animation: hoverAnimation 1s ease-in-out infinite alternate;
+}
+
+@keyframes hoverAnimation {
+    0% {
+        transform: scale(1);
+        border-color: rgb(74, 0, 172);
+        box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 25px 5px rgb(13, 0, 31), 0 0 35px 5px rgb(74, 0, 172);
+    }
+    50% {
+        box-shadow: 0 0 5px transparent;
+        box-shadow: 0 0 10px transparent;
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+nav ul li a#nb2especial {
+    position: relative;
+    border: 2px solid transparent;
+    animation: borderAnimationEspecial 2s infinite;
+}
+
+@keyframes borderAnimationEspecial {
+    0% {
         border-color: red;
         box-shadow: 0 0 5px red;
     }
@@ -81,11 +121,11 @@ nav ul#navbar2 li a {
     }
 }
 
-nav ul#navbar2 li a:hover {
-    animation: hoverAnimation 1s ease-in-out infinite alternate;
+nav ul li a#nb2especial:hover {
+    animation: hoverAnimationEspecial 1s ease-in-out infinite alternate;
 }
 
-@keyframes hoverAnimation {
+@keyframes hoverAnimationEspecial {
     0% {
         transform: scale(1);
         border-color: red;
