@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Beyond</title>
+    <link rel="stylesheet" id="css-ref" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            background-color: #000;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+        input[type="submit"], input[type="reset"], input[type="button"] {
+            width: 32%;
+            margin-right: 1%;
+            background-color: rgb(0, 120, 153);
+            color: #000;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="reset"], input[type="button"] {
+            background-color: #7e0000;
+        }
+        input[type="submit"]:hover {
+            background-color: rgb(0, 120, 153);
+        }
+        input[type="reset"]:hover, input[type="button"]:hover {
+            background-color: #7e0000;
+        }
+    </style>
+    <script>
+        function borrarDatos() {
+            document.getElementById('registroForm').reset();
+        }
+    </script>
+</head>
+<body>
+    <script src="index.js"></script>
+    <video autoplay muted loop id="bg-video">
+        <source id="bg-video-src" src="https://static.moewalls.com/videos/preview/2023/deep-space-galactic-preview.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+        <header>
+            <h1 id="colortxtTitle">→ [ Beyond ] ←</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="registro.html">Registrarse</a></li>
+                </ul>
+                <ul id="navbar2">
+                    <li><a href="https://docs.google.com/presentation/d/1Lst0Rc8coGDhJqXXWx_YkKdolnMU14Tx/edit?usp=sharing&ouid=118294878717046390915&rtpof=true&sd=true", target="_blank">Powerpoint</a></li>
+                    <li><a href="https://drive.google.com/file/d/1Ofayo7ZjWKD9-Ed0qCzTpqc3rubSgnzO/view?usp=sharing", target="_blank">Video DNS y FTP</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 align="center">Registro - Beyond</h1>
+            <form id="registroForm" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="sexo">Género:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+                
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+                
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Resetear">
+                <input type="button" value="Borrar Datos" onclick="borrarDatos()">
+            </form>
+            <br> <br> <br> <br> <br>
+        </main>
+        <footer>
+            <p id="colortxt3">&copy; 2024 Beyond. All rights reserved.</p>
+            <button class="button-85" role="button" onclick="changeStyle(1)">Estilo 1</button>
+            <button class="button-85" role="button" onclick="changeStyle(2)">Estilo 2</button>
+            <button class="button-85" role="button" onclick="changeStyle(3)">Estilo 3</button>
+            <button class="button-85" role="button" onclick="changeStyle(4)">Estilo 4</button>
+            <button class="button-85" role="button" onclick="changeStyle(5)">Estilo 5</button>
+        </footer>
+    </div>
+</body>
+</html>
